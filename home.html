@@ -1,0 +1,82 @@
+<html style="width: 104%;">
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?&libraries=places&language=pt-BR&key=AIzaSyCf6bgq2rikHSZoniRIaTnWTgKCce_V03s" async defer></script>
+    <script src="./js/script.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<div class="carregarPaginas" style="width: 375px; height: 667px;">
+<div>
+    <nav class="navbar navbar-dark bg-dark" style="padding: 0px; text-align: right; height: 6%">
+        <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button> -->
+        <img style="width: 8%; padding: 0; position: absolute; padding-top: 0%; margin-left: 4%; z-index: 2;" class="navbar-brand" src="./img/menu.png" />
+        <img style="width: 30%; padding: 0; position: absolute; padding-top: 10%; z-index: 1; margin-left: 262px" class="navbar-brand" src="./img/nasa.png" />
+    </nav>
+
+    <nav class="navbar navbar-light bg-light" style="padding: 0px; text-align: right; height: 6%; box-shadow: 0px 1px 6px 1px;">
+        <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button> -->
+            <div class="example">
+                <input type="text" id="autocomplete" style="border-top-right-radius: 0px; border-bottom-right-radius: 0px;" class="form-control" placeholder="Digite um local" autocomplete="off">
+            </div>
+            <button class="btn btn-primary" style="box-shadow: none !important; outline: none; height: 38px; margin-right: 134px; border-top-left-radius: 0px; border-bottom-left-radius: 0px;" onclick="geolocate()">
+                <i class="fa fa-search"></i>
+            </button>
+    </nav>
+</div>
+
+<div id="map" class="container-fluid" style="padding-top: 90%;">
+    
+</div>
+
+<div class="row" style="background-color: #6ea1f8; text-align: center; margin: 0; margin-left: -4px; box-shadow: 0px -1px 6px -1px;">
+    <div class="col-sm">
+        <div class="row" style="width: 105.2%; margin-left: -2%; ">
+            <div class="col-sm botaoMenuHome">
+                <img src="img/destination.png"/>
+                <br>
+                Pontos Turísticos
+            </div>
+            <div class="col-sm botaoMenuHome">
+                <img src="img/text-books.png"/>
+                <br>
+                História
+            </div>
+            <div class="col-sm botaoMenuHome">
+                <img src="img/sun.png"/>
+                <br>
+                Clima
+            </div>
+            <div class="col-sm botaoMenuHome">
+                <img src="img/tornado.png"/>
+                <br>
+                Eventos da Natureza
+            </div>
+            <div class="col-sm botaoMenuHome">
+                <img src="img/text-lines.png"/>
+                <br>
+                Notícias
+            </div>
+            <div class="col-sm botaoMenuHome">
+                <img src="img/share.png"/>
+                <br>     
+                Multimídia
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</body>
+
+</html>
